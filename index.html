@@ -17,41 +17,28 @@
         <h1 class="text-center fw-bold my-3 text-danger">Phone Buy</h1>
         <!-- search box -->
         <div class="input-group mb-3 w-50">
-            <input type="text" class="form-control" placeholder="Search your phone" aria-label="Recipient's username"
-                aria-describedby="button-addon2">
-            <button class="btn btn-danger" type="button" id="button-addon2">Search</button>
+            <input id="searchInput" type="text" class="form-control" placeholder="Search your phone"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button id="searchBtn" class="btn btn-danger" type="button" id="button-addon2">Search</button>
         </div>
     </header>
 
     <main>
 
+        <div>
+            <h2 id="errorMessage" class="text-center text-secondary mt-5 d-none"></h2>
+        </div>
+
         <!-- showing phone details -->
-        <!-- <div id="showingDetails" class="container">
-            <div class="card w-50 mx-auto my-4">
-                <img src="./11_Success-1.jpg" class="card-img-top img-fluid" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Name: I phone x</h5>
-                  <p class="card-text m-0">release: 15-10-2022</p>
-                  <p class="card-text m-0">ram: 15-10-2022</p>
-                  <p class="card-text m-0">display size: 15-10-2022</p>
-                </div>
-              </div>
-        </div> -->
+        <div class="container">
+            <div id="showDetails" class="w-50 mx-auto my-4">
+                
+            </div>
+        </div>
 
         <!-- showing result -->
-        <div id="showingResult" class="container mt-5">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-
-                <div class="col">
-                    <div class="card">
-                        <img src="./11_Success-1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                            <h5 class="card-title fw-bold">Name: I phone x</h5>
-                            <p class="text-muted fw-bold">brand: apple</p>
-                            <a href="#" class="btn btn-danger w-75 text-capitalize">go for details</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="container mt-5">
+            <div id="showingResult" class="row row-cols-1 row-cols-md-3 g-4">
 
             </div>
         </div>
