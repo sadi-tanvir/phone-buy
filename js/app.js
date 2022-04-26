@@ -124,6 +124,7 @@ const showPhoneDetails = (phone) => {
 
 // load more data
 loadMoreBtn.addEventListener('click', async () => {
+  try {
     // get input value
     const inputValue = searchInput.value;
       // remove error message
@@ -131,7 +132,6 @@ loadMoreBtn.addEventListener('click', async () => {
       errorMessage.innerText = "";
       // remove previous result
       showingResult.innerHTML = ''
-      try {
         // fetch data
       const res = await fetch(
         `https://openapi.programming-hero.com/api/phones?search=${inputValue.toLowerCase()}`
